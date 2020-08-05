@@ -5,9 +5,7 @@ import CartItems from '../../components/CartItems/CartItems';
 import { addToCart, removeFromCart, removeWholeItem } from '../../store/actions/cart';
 
 class Cart extends React.Component {
-    sortItems = (cart) => {
-        return cart.sort((a, b) => a._id - b._id);
-    }
+    sortItems = (cart) => cart.sort((a, b) => a._id > b._id ? 1 : -1);
 
     goToCheckout = () => {
         this.props.history.push('/checkout');

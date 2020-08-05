@@ -11,8 +11,9 @@ const CartItems = ({ cartItems, addToCart, removeFromCart, removeWholeItem, goTo
                     <tr>
                         <th>Photo</th>
                         <th>Name</th>
+                        <th>Price</th>
                         <th>Quantity</th>
-                        <th>Price / Unit</th>
+                        <th>Total</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -22,6 +23,7 @@ const CartItems = ({ cartItems, addToCart, removeFromCart, removeWholeItem, goTo
                     }
                     <tr>
                         <td>Total</td>
+                        <td />
                         <td />
                         <td />
                         <td />

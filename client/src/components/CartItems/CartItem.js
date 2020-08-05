@@ -10,6 +10,7 @@ const CartItem = ({ cartItem, addToCart, removeFromCart, removeWholeItem }) => (
             <span>{cartItem.quantity}</span>
             <button onClick={() => addToCart(cartItem)}>+</button>
         </td>
+        <td>{cartItem.price * cartItem.quantity}</td>
         <td>
             <button onClick={() => removeWholeItem(cartItem)}>X</button>
         </td>
